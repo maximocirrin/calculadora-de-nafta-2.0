@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Nafta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-circle"></div>
+
+  <div class="card">
+    <h1>Calculadora de Nafta</h1>
+
+    <label for="km">Kilómetros a recorrer</label>
+    <input type="number" id="km" placeholder="Ej: 150" min="0">
+
+    <label for="consumo">Consumo del vehículo (L/100km)</label>
+    <input type="number" id="consumo" placeholder="Ej: 8" step="0.1" min="0">
+
+    <label for="tipo">Tipo de nafta</label>
+    <select id="tipo">
+      <option value="super">Súper ($1.200/L)</option>
+      <option value="premium">Premium ($1.450/L)</option>
+      <option value="diesel">Diésel ($1.100/L)</option>
+    </select>
+
+    <button id="calcular">Calcular</button>
+
+    <div class="resultado" id="resultado"></div>
+
+    <footer>Precios actualizados a nov 2025 - valores estimados</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
